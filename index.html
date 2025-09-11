@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCI Explorer | Understanding Human-Computer Interaction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">HCI<span>Explorer</span></div>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#what-is-hci">What is HCI?</a>
+                <a href="#ergonomics">Ergonomics</a>
+                <a href="#challenges">Challenges</a>
+                <a href="#case-studies">Case Studies</a>
+                <a href="#themes">Themes</a>
+                <a href="#resources">Resources</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img class="background" src="img/bg.png">
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Designing Human-Centered Technology</h1>
+                <p>Explore the fascinating field where psychology, design, and technology converge to create intuitive experiences that empower people. Discover how HCI shapes the future of user-friendly technology.</p>
+                <div class="hero-btns">
+                    <a href="#what-is-hci" class="btn">Discover HCI</a>
+                    <a href="#resources" class="btn btn-outline">Learning Resources</a>
+                    <a href="#case-studies" class="btn btn-outline">View Case Studies</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="interactive-demo">
+                <h3>Try an HCI Concept</h3>
+                <p>Experience a simple interactive demo of affordances in action.</p>
+                <button class="demo-button" onclick="showDemo()">Launch Demo</button>
+            </div>
+
+    <!-- What is HCI? -->
+    <section id="what-is-hci" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>What is Human-Computer Interaction?</h2>
+                <p>Understanding the fundamental concepts that shape how humans interact with technology in intuitive and meaningful ways.</p>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-img">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Definition</h3>
+                        <p>HCI is a multidisciplinary field focused on the design of computer technology and the interaction between humans (users) and computers. It combines insights from computer science, behavioral sciences, design, and other fields to create user-friendly systems.</p>
+                        <p><strong>Key Focus:</strong> Usability, accessibility, and enhancing user experience through thoughtful design.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Historical Context</h3>
+                        <p>HCI emerged in the early 1980s as personal computers became accessible. Pioneers like Douglas Engelbart (inventor of the mouse) and researchers at Xerox PARC established foundational concepts that evolved into today's UX design practices.</p>
+                        <p><strong>Milestone:</strong> The development of the graphical user interface (GUI) revolutionized how users interact with computers.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Interdisciplinary Nature</h3>
+                        <p>HCI draws from cognitive psychology (how humans process information), computer science (system design), design (aesthetics and usability), anthropology (human behavior), and ergonomics (physical interaction).</p>
+                        <p><strong>Example:</strong> Cognitive psychology informs how users perceive and navigate interfaces, while design ensures visual clarity.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Modern Applications</h3>
+                        <p>HCI principles are applied in mobile apps, virtual reality, voice assistants, and IoT devices, ensuring technology adapts to human needs across diverse contexts.</p>
+                        <p><strong>Example:</strong> Voice interfaces like Siri or Alexa rely on HCI to make interactions natural and intuitive.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ergonomics -->
+    <section id="ergonomics" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ergonomics & Human Factors</h2>
+                <p>Designing for human capabilities and limitations in physical and cognitive domains to enhance usability and comfort.</p>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-content">
+                        <h3><i class="fas fa-hand-pointer"></i> Physical Ergonomics</h3>
+                        <p>Focuses on designing hardware and workspaces that fit the human body. This includes considerations for posture, repetitive strain prevention, and accessibility for users with different physical abilities.</p>
+                        <p><strong>Example:</strong> Ergonomic keyboards reduce wrist strain, while adjustable monitors support proper posture.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3><i class="fas fa-brain"></i> Cognitive Ergonomics</h3>
+                        <p>Concerned with mental processes such as perception, memory, reasoning, and motor response. Helps design interfaces that align with how people process information and make decisions.</p>
+                        <p><strong>Example:</strong> Simplified navigation menus reduce cognitive load for users.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3><i class="fas fa-balance-scale"></i> Human Factors Engineering</h3>
+                        <p>Applies knowledge of human capabilities to system design. Includes workload management, decision-making support, and human reliability analysis to create safer, more efficient systems.</p>
+                        <p><strong>Example:</strong> Cockpit designs in aviation use human factors to minimize pilot errors.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3><i class="fas fa-universal-access"></i> Inclusive Design</h3>
+                        <p>Ensures systems are usable by people with diverse abilities, including those with visual, auditory, or motor impairments, through adaptive technologies and universal design principles.</p>
+                        <p><strong>Example:</strong> Screen readers and high-contrast modes enhance accessibility.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges -->
+    <section id="challenges" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contemporary Challenges in HCI</h2>
+                <p>Key issues facing interaction designers and researchers today in a rapidly evolving tech landscape.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Accessibility & Inclusion</h3>
+                        <p>Designing technology that works for people with diverse abilities, languages, cultural backgrounds, and tech literacy levels. Ensuring digital accessibility is both an ethical and legal requirement.</p>
+                        <p><strong>Challenge:</strong> Creating WCAG-compliant interfaces without compromising aesthetics.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Privacy & Security</h3>
+                        <p>Protecting user data while maintaining usability. Creating intuitive privacy controls and security measures that don't burden the user experience.</p>
+                        <p><strong>Challenge:</strong> Balancing two-factor authentication usability with robust security.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>AI Integration</h3>
+                        <p>Designing interfaces for AI systems that maintain transparency, user control, and trust. Addressing algorithmic bias and creating meaningful human-AI collaboration.</p>
+                        <p><strong>Challenge:</strong> Explaining AI decisions in a way users can understand.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Cross-Platform Experience</h3>
+                        <p>Creating seamless experiences across diverse devices (mobile, desktop, wearables, IoT) with varying screen sizes, input methods, and contexts of use.</p>
+                        <p><strong>Challenge:</strong> Maintaining consistency across touch, voice, and keyboard inputs.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Ethical Design</h3>
+                        <p>Ensuring technology promotes positive outcomes and avoids harm, such as addiction or misinformation, by embedding ethical considerations into the design process.</p>
+                        <p><strong>Challenge:</strong> Avoiding "dark patterns" that manipulate user behavior.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section id="case-studies" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>HCI Case Studies</h2>
+                <p>Real-world examples of HCI principles in action.</p>
+            </div>
+            <div class="case-study">
+                <img src="https://via.placeholder.com/200" alt="Smartphone interface">
+                <div class="case-study-content">
+                    <h3>Smartphone Touch Interfaces</h3>
+                    <p>The evolution of smartphone interfaces demonstrates HCI's impact on gesture-based navigation. Research into thumb reach and touch accuracy led to designs like edge-to-edge displays and adaptive UI layouts.</p>
+                    <p><strong>Impact:</strong> Improved usability for one-handed operation and accessibility.</p>
+                </div>
+            </div>
+            <div class="case-study">
+                <img src="https://via.placeholder.com/200" alt="Voice assistant">
+                <div class="case-study-content">
+                    <h3>Voice Assistants</h3>
+                    <p>Voice assistants like Amazon Alexa apply HCI principles to natural language processing, ensuring users can interact conversationally. Research in cognitive ergonomics shapes how responses are structured.</p>
+                    <p><strong>Impact:</strong> Reduced learning curve for non-technical users.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Themes -->
+    <section id="themes" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Recurrent Themes in HCI</h2>
+                <p>Fundamental concepts that shape interaction design practices for intuitive and effective user experiences.</p>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-content">
+                        <h3><i class="fas fa-user-circle"></i> User-Centered Design</h3>
+                        <p>Design process focused on understanding user needs through research, prototyping, and iterative testing. Puts real users at the center of design decisions.</p>
+                        <p><strong>Example:</strong> User personas guide feature prioritization in app development.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3><i class="fas fa-lightbulb"></i> Affordances & Signifiers</h3>
+                        <p>Designing intuitive cues that suggest how an interface element should be used (e.g., a button that looks pressable). Signifiers communicate purpose and functionality.</p>
+                        <p><strong>Example:</strong> A shadow effect on a button suggests it can be clicked.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3><i class="fas fa-sync-alt"></i> Feedback Loops</h3>
+                        <p>Providing immediate, clear responses to user actions. Helps users understand system status and the results of their interactions.</p>
+                        <p><strong>Example:</strong> A loading spinner indicates a process is ongoing.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3><i class="fas fa-layer-group"></i> Mental Models</h3>
+                        <p>Aligning system design with users' pre-existing understanding of how things work. The gap between user mental models and system models causes usability issues.</p>
+                        <p><strong>Example:</strong> A trash can icon for deleting files aligns with familiar concepts.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3><i class="fas fa-globe"></i> Contextual Design</h3>
+                        <p>Designing systems that adapt to the user's environment, tasks, and goals, ensuring relevance and usability in real-world scenarios.</p>
+                        <p><strong>Example:</strong> Location-based services adjust content based on user location.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources -->
+    <section id="resources" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Learning Resources</h2>
+                <p>Essential materials for students and professionals in HCI to deepen their knowledge and skills.</p>
+            </div>
+            <div class="resource-list">
+                <div class="resource-item">
+                    <div class="resource-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div>
+                        <h3>Books</h3>
+                        <p><strong>The Design of Everyday Things</strong> by Don Norman<br>
+                        <strong>Don't Make Me Think</strong> by Steve Krug<br>
+                        <strong>About Face: The Essentials of Interaction Design</strong> by Alan Cooper<br>
+                        <strong>Human-Computer Interaction</strong> by Dix, Finlay, Abowd & Beale<br>
+                        <strong>Designing Interactions</strong> by Bill Moggridge</p>
+                    </div>
+                </div>
+                <div class="resource-item">
+                    <div class="resource-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <h3>Online Courses</h3>
+                        <p><strong>Interaction Design Specialization</strong> (Coursera)<br>
+                        <strong>Human-Computer Interaction</strong> (edX)<br>
+                        <strong>UI/UX Design Specialization</strong> (Coursera)<br>
+                        <strong>Google UX Design Professional Certificate</strong><br>
+                        <strong>Introduction to User Experience Design</strong> (Georgia Tech via edX)</p>
+                    </div>
+                </div>
+                <div class="resource-item">
+                    <div class="resource-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <div>
+                        <h3>Journals & Conferences</h3>
+                        <p><strong>ACM Transactions on Computer-Human Interaction</strong><br>
+                        <strong>International Journal of Human-Computer Studies</strong><br>
+                        <strong>CHI Conference</strong> (ACM SIGCHI)<br>
+                        <strong>UIST Symposium</strong><br>
+                        <strong>HCI International Conference</strong></p>
+                    </div>
+                </div>
+                <div class="resource-item">
+                    <div class="resource-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div>
+                        <h3>Tools & Communities</h3>
+                        <p><strong>Figma, Adobe XD, Sketch</strong> (Prototyping)<br>
+                        <strong>UserTesting, Lookback</strong> (User Research)<br>
+                        <strong>Nielsen Norman Group</strong> (Articles & Reports)<br>
+                        <strong>Interaction Design Foundation</strong> (Community)<br>
+                        <strong>Dribbble, Behance</strong> (Design Inspiration)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Get in touch to share feedback, ask questions, or contribute to HCI Explorer.</p>
+            </div>
+            <div class="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                <button onclick="submitForm()">Send Message</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>HCI Explorer</h3>
+                    <p>An educational resource for students and professionals exploring the field of Human-Computer Interaction. Join our community to learn, share, and innovate.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#what-is-hci"><i class="fas fa-chevron-right"></i> What is HCI?</a></li>
+                        <li><a href="#ergonomics"><i class="fas fa-chevron-right"></i> Ergonomics</a></li>
+                        <li><a href="#challenges"><i class="fas fa-chevron-right"></i> Challenges</a></li>
+                        <li><a href="#case-studies"><i class="fas fa-chevron-right"></i> Case Studies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#resources"><i class="fas fa-chevron-right"></i> Books & Courses</a></li>
+                        <li><a href="#case-studies"><i class="fas fa-chevron-right"></i> Case Studies</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Research Papers</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Glossary</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Connect</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="#"><i class="fab fa-github"></i> GitHub</a></li>
+                        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 HCI Explorer. This is a demonstration website for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <!-- Demo Modal -->
+    <div id="demo-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeDemo()">&times;</span>
+            <h2>Interactive Affordance Demo</h2>
+            <p>Click the buttons below to see how visual cues (affordances) suggest interactivity. Notice the feedback when you hover or click.</p>
+            <div class="demo-buttons">
+                <button class="demo-btn" onclick="alert('Button 1 clicked!')">Button 1</button>
+                <button class="demo-btn" onclick="alert('Button 2 clicked!')">Button 2</button>
+                <button class="demo-btn disabled" disabled>Disabled Button</button>
+            </div>
+            <p><strong>Observation:</strong> Buttons with shadows or hover effects invite interaction, while the disabled button lacks these cues.</p>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Add active class to navigation based on scroll position
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Interactive demo function
+        function showDemo() {
+            const modal = document.getElementById('demo-modal');
+            modal.style.display = 'block';
+        }
+
+        // Close demo modal
+        function closeDemo() {
+            const modal = document.getElementById('demo-modal');
+            modal.style.display = 'none';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('demo-modal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Contact form submission
+        function submitForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if (name && email && message) {
+                alert('Thank you for your message! We will get back to you soon.');
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('message').value = '';
+            } else {
+                alert('Please fill out all fields.');
+            }
+        }
+
+        // Add animation on scroll for cards
+        const cards = document.querySelectorAll('.card');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        cards.forEach(card => observer.observe(card));
+    </script>
+</body>
+</html>
